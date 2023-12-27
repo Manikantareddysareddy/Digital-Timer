@@ -1,3 +1,4 @@
+
 import {Component} from 'react'
 
 import './index.css'
@@ -79,39 +80,35 @@ class DigitalTimer extends Component {
             <div className="container1">
               {TimerStatus ? (
                 <div className="TimeStatus-container">
-                  <button className="btn" type="button">
-                    <img
-                      src="https://assets.ccbp.in/frontend/react-js/pause-icon-img.png "
-                      alt="pause icon"
-                      className="image"
-                    />
-                  </button>
+                  <img
+                    src="https://assets.ccbp.in/frontend/react-js/pause-icon-img.png "
+                    alt="pause icon"
+                    className="image"
+                  />
                   <button className="para btn1" onClick={this.pauseBtn}>
                     Pause
                   </button>
                 </div>
               ) : (
                 <div className="TimeStatus-container">
-                  <button className="btn" type="button">
-                    <img
-                      src="https://assets.ccbp.in/frontend/react-js/play-icon-img.png"
-                      alt="play icon"
-                      className="image"
-                    />
-                  </button>
+                  <img
+                    src="https://assets.ccbp.in/frontend/react-js/play-icon-img.png"
+                    alt="play icon"
+                    className="image"
+                  />
+
                   <button className="para btn1" onClick={this.startBtn}>
                     Start
                   </button>
                 </div>
               )}
               <div className="TimeStatus-container">
-                <button className="btn" type="button">
-                  <img
-                    src="https://assets.ccbp.in/frontend/react-js/reset-icon-img.png"
-                    alt="reset icon"
-                    className="image"
-                  />
-                </button>
+                <img
+                  src="https://assets.ccbp.in/frontend/react-js/reset-icon-img.png"
+                  alt="reset icon"
+                  className="image"
+                />
+
                 <button className="para btn1" onClick={this.resetBtn}>
                   Reset
                 </button>
